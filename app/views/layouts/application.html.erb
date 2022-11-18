@@ -8,9 +8,13 @@
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Martel&family=Open+Sans:wght@300;400&family=Poppins:wght@300&family=Quicksand:wght@300;400&family=Source+Sans+Pro:wght@300;400&display=swap" rel="stylesheet">
   </head>
 
   <body>
+    <%= render "layouts/navbar" %>
     <%= yield %>
   </body>
 </html>

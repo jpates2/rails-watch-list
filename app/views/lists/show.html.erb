@@ -1,26 +1,28 @@
+<div class="banner banner-show">
+  <h1 class="header"><%= @list.name %></h1>
+  <a><%= link_to "Add Movie", new_list_bookmark_path(@list), class: "page-link movie-button" %></a>
+</div>
+
 <div class="container">
 
-  <h1><%= @list.name %></h1>
-  <br>
-
-  <ul>
-    <% @list.bookmarks.each do |bookmark| %>
-      <li><%= image_tag bookmark.movie.poster_url, class: "poster-image" %></li>
-      <li><%= bookmark.movie.title %></li>
-      <li><%= bookmark.movie.overview %></li>
-      <li><%= bookmark.movie.rating %></li>
-      <li><%= bookmark.comment %></li>
-      <%= link_to "Delete bookmark", bookmark_path(bookmark),
-    data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}
-    %>
-    <br>
-    <br>
-    <% end %>
+  <ul div="movie-list">
+    <div class="movie-card">
+      <% @list.bookmarks.each do |bookmark| %>
+        <li><%= image_tag bookmark.movie.poster_url, class: "poster-image" %></li>
+        <li><%= bookmark.movie.title %></li>
+        <li><%= bookmark.movie.overview %></li>
+        <li><%= bookmark.movie.rating %></li>
+        <li><%= bookmark.comment %></li>
+        <%= link_to "Delete bookmark", bookmark_path(bookmark), class: "page-link",
+      data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}
+      %>
+      <br>
+      <br>
+      <% end %>
+    </div>
   </ul>
 
-  <br>
-  <%= link_to "Add Movie", new_list_bookmark_path(@list) %>
-  <br>
-  <%= link_to "Back to homepage", lists_path %>
+  <%# <%= link_to "Add Movie", new_list_bookmark_path(@list), class: "page-link" %>
+  <%# <%= link_to "Back to homepage", lists_path, class: "page-link" %>
 
 </div>

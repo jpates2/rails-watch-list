@@ -1,13 +1,14 @@
-<div class="container">
+<div class="banner banner-home">
+  <h1 class="header">Save any kind of movie.</h1>
+</div>
 
-  <h1>Pick A Movie Type</h1>
-
+<div class="container container-index">
   <ul>
     <% @lists.each do |list| %>
-    <li><%= link_to list.name, list_path(list) %></li>
+    <li><%= link_to list.name, list_path(list), class: "list-item" %></li>
     <% end %>
   </ul>
 
-  <%= link_to "Create new list", new_list_path %>
+  <%# <%= link_to "Create new list", new_list_path, class: "page-link" %>
 
 </div>

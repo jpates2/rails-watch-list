@@ -1,3 +1,46 @@
-.poster-image {
-  width: 100px;
+.movie-list {
+  padding-top: 32px;
+}
+
+.movie-card {
+  overflow: hidden;
+  height: 200px;
+  width: 800px;
+  color: rgba(255, 255, 255, 0.6);
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  display: inline-grid;
+  grid-template-columns: 1fr 7fr;
+  // align-items: center;
+  // margin-top: 32px;
+  margin: 16px auto;
+  background-color: rgba(148, 155, 160, 0.7);
+  border-radius: 4px;
+}
+
+.movie-card img {
+  height: 200px;
+  object-fit: cover;
+}
+
+.movie-image {
+  padding-left: 0px;
+}
+
+.movie-details {
+  flex-direction: column;
+  padding-top: 16px;
+}
+
+.movie-title {
+  font-size: 16px;
+}
+
+.delete-bookmark {
+  border-radius: 4px;
+  border: 1px solid rgba(148, 155, 160, 0.9);
+  color: rgb(148, 155, 160);
+  margin-top: 16px;
+  width: 160px;
+  text-align: center;
+  padding: 4px;
 }

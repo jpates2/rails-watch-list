@@ -1,10 +1,12 @@
-<div class="container">
+<div class="banner banner-create">
+  <h1 class="header">Create New List</h1>
+</div>
 
-  <h1>Create New List</h1>
+<div class="container container-form">
 
     <%= simple_form_for(@list) do |f| %>
       <%= f.input :name %>
-      <%= f.submit %>
+      <%= f.submit "Submit", class: "form-button" %>
     <% end %>
 
 </div>

@@ -1,0 +1,14 @@
+.movie-button {
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  border-radius: 8px;
+  color: rgba(0, 0, 0, 0.6);
+  // width: 120px;
+  justify-items: center;
+  width: 120px;
+  margin: 0 auto;
+}
+
+.movie-button:hover {
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  color: rgba(0, 0, 0, 0.8);
+}

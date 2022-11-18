@@ -1,0 +1,39 @@
+<div class="banner banner-show">
+  <h1 class="header"><%= @list.name %></h1>
+  <a><%= link_to "Add Movie", new_list_bookmark_path(@list), class: "page-link movie-button" %></a>
+</div>
+
+<div class="container container-movies">
+
+
+
+<% unless @list.bookmarks.empty? %>
+  <div class="movie-card">
+    <div class="movie-image">
+<% end %>
+      <% @list.bookmarks.each do |bookmark| %>
+        <%= image_tag bookmark.movie.poster_url, class: "poster-image" %>
+      <% end %>
+    </div>
+    <ul class="movie-details">
+      <% @list.bookmarks.each do |bookmark| %>
+        <li><%= bookmark.movie.title %></li>
+        <li><%= bookmark.movie.overview %></li>
+        <li><%= bookmark.movie.rating %></li>
+        <li><%= bookmark.comment %></li>
+        <%= link_to "Delete bookmark", bookmark_path(bookmark), class: "page-link delete-bookmark",
+      data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}
+      %>
+      <br>
+      <br>
+      <% end %>
+    </ul>
+
+  <% unless @list.bookmarks.empty? %>
+  </div>
+
+  <%# <%= link_to "Add Movie", new_list_bookmark_path(@list), class: "page-link" %>
+  <%# <%= link_to "Back to homepage", lists_path, class: "page-link" %>
+
+</div>
+<% end %>

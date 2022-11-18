@@ -1,0 +1,33 @@
+.banner {
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  text-align: center;
+  color: rgba(0,0,0,0.8)
+}
+
+.banner-home {
+  background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), asset-url("cinema-outside.jpg");
+  color: white;
+}
+
+.banner-show {
+  background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), asset-url("reel.jpg");
+  color: black,
+}
+
+.banner-create {
+  background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), asset-url("popcorn.jpg");
+  color: black,
+}
+
+.banner-new {
+  background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), asset-url("board.jpg");
+  color: white;
+}
+
+.header {
+  font-size: 48px;
+  font-family: "Martel";
+  padding-top: 144px;
+}
