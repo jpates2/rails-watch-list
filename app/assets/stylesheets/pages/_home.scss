@@ -1,7 +1,10 @@
 // Specific CSS for your home-page
 .container-index {
-  text-align: center;
-  width: 480px;
+  // text-align: center;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 32px;
 }
 
 li {
@@ -14,9 +17,9 @@ li {
 
 .list-item {
   text-decoration: none;
-  background-color: rgba(148, 155, 160, 0.6);
+  background-color: rgba(255, 255,255, 0.7);
   border-radius: 4px;
-  color: rgba(255, 255,255, 0.7);
+  color: rgba(148, 155, 160, 0.6);
   background-size: cover;
   background-position: center;
   height: 180px;
@@ -30,10 +33,11 @@ li {
   }
 
 .list-item:hover {
-  color: rgba(255, 255,255, 0.9);
+  color: rgba(148, 155, 160, 0.9);
   box-shadow: 0 0 16px rgba(0,0,0,0.2);
 }
 
 body {
   font-family: "Open Sans";
+  background-color: #EFF1ED;
 }

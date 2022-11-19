@@ -1,14 +1,30 @@
 .movie-button {
-  border: 1px solid rgba(0, 0, 0, 0.6);
-  border-radius: 8px;
-  color: rgba(0, 0, 0, 0.6);
-  // width: 120px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 4px;
+  color: rgba(255, 255, 255, 0.6);
   justify-items: center;
   width: 120px;
   margin: 0 auto;
 }
 
 .movie-button:hover {
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  color: rgba(0, 0, 0, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.delete-list-button {
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 4px;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 18px;
+  justify-items: center;
+  width: 140px;
+  margin-top: 320px;
+  margin-right: 24px;
+  float: right;
+}
+
+.delete-list-button:hover {
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.8);
 }

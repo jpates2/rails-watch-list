@@ -4,21 +4,22 @@
 
 .movie-card {
   overflow: hidden;
-  height: 200px;
+  height: 240px;
   width: 800px;
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(0, 0, 0, 0.6);
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   display: inline-grid;
   grid-template-columns: 1fr 7fr;
   // align-items: center;
   // margin-top: 32px;
   margin: 16px auto;
-  background-color: rgba(148, 155, 160, 0.7);
+  background-color: rgba(255, 255, 255, 0.7);
   border-radius: 4px;
+  text-align: left;
 }
 
 .movie-card img {
-  height: 200px;
+  height: 240px;
   object-fit: cover;
 }
 
@@ -28,12 +29,16 @@
 
 .movie-details {
   flex-direction: column;
-  padding-top: 16px;
+  padding: 16px 32px 16px 16px;
 }
 
 .movie-title {
   font-size: 16px;
 }
+
+// .movie-rating {
+//   text-align: right;
+// }
 
 .delete-bookmark {
   border-radius: 4px;
@@ -43,4 +48,16 @@
   width: 160px;
   text-align: center;
   padding: 4px;
+}
+
+.container {
+  text-align: center;
+}
+
+.fa-star {
+  color: rgba(249, 194, 46, 1);
+}
+
+.movie-card li {
+  padding-bottom: 12px;
 }

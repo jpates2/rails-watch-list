@@ -1,9 +1,9 @@
 <div class="banner banner-home">
-  <h1 class="header">Save any kind of movie.</h1>
+  <h1 class="header">Watchlist.</h1>
 </div>
 
-<div class="container container-index">
-  <ul>
+<div class="container">
+  <ul class="container-index">
     <% @lists.each do |list| %>
     <li><%= link_to list.name, list_path(list), class: "list-item" %></li>
     <% end %>
