@@ -28,12 +28,13 @@
 }
 
 .movie-details {
-  flex-direction: column;
+  // flex-direction: column;
   padding: 16px 32px 16px 16px;
 }
 
 .movie-title {
   font-size: 16px;
+  font-weight: 600;
 }
 
 // .movie-rating {
@@ -42,12 +43,18 @@
 
 .delete-bookmark {
   border-radius: 4px;
-  border: 1px solid rgba(148, 155, 160, 0.9);
-  color: rgb(148, 155, 160);
+  border: 1px solid rgba(148, 155, 160, 0.7);
+  color: rgba(148, 155, 160, 0.9);
   margin-top: 16px;
   width: 160px;
   text-align: center;
   padding: 4px;
+}
+
+.delete-bookmark:hover {
+  border: 1px solid rgba(148, 155, 160, 1);
+  color: rgba(148, 155, 160, 1);
+  // background-color:(148, 155, 160, 0.8);
 }
 
 .container {

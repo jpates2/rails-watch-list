@@ -10,6 +10,7 @@
 .movie-button:hover {
   border: 1px solid rgba(255, 255, 255, 0.8);
   color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 .delete-list-button {
@@ -19,7 +20,7 @@
   font-size: 18px;
   justify-items: center;
   width: 140px;
-  margin-top: 320px;
+  margin-top: 200px;
   margin-right: 24px;
   float: right;
 }
@@ -27,4 +28,5 @@
 .delete-list-button:hover {
   border: 1px solid rgba(255, 255, 255, 0.8);
   color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.2);
 }

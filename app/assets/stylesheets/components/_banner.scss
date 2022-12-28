@@ -5,21 +5,25 @@
   color: rgba(0,0,0,0.8)
 }
 
-.banner-home, .banner-show {
-  background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), asset-url("cinema-outside.jpg");
+.banner-home, .banner-show, .banner-create {
   color: white;
-  height: 600px;
+  height: 480px;
+}
+
+.banner-home {
+  background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), asset-url("cinema-outside.jpg");
 }
 
 .banner-create {
   background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), asset-url("cinema-inside-crop.jpg");
-  color: white;
-  height: 480px;
-
 }
 
 .header {
   font-size: 48px;
   font-family: "Martel";
   padding-top: 144px;
+}
+
+.new-header {
+  padding-top: 280px;
 }

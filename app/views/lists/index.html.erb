@@ -5,7 +5,9 @@
 <div class="container">
   <ul class="container-index">
     <% @lists.each do |list| %>
-    <li><%= link_to list.name, list_path(list), class: "list-item" %></li>
+        <li class="list-item" style="background-image: url('<%= cl_image_path list.photo.key %>'); background-size: cover; background-repeat: no-repeat;">
+          <%= link_to list.name, list_path(list) %>
+        </li>
     <% end %>
   </ul>
 
