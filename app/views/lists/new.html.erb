@@ -2,12 +2,14 @@
   <h1 class="header new-header">Create New List</h1>
 </div>
 
-<div class="container container-form">
+<div class="form-container">
+  <div class="container form-box">
 
-    <%= simple_form_for(@list) do |f| %>
-      <%= f.input :name %>
-      <%= f.input :photo, as: :file %>
-      <%= f.submit "Submit", class: "form-button" %>
-    <% end %>
+      <%= simple_form_for(@list) do |f| %>
+        <%= f.input :name %>
+        <%= f.input :photo, as: :file %>
+        <%= f.submit "Submit", class: "form-button" %>
+      <% end %>
 
+  </div>
 </div>
