@@ -3,9 +3,15 @@
   height: auto;
   color: rgba(255, 255, 255, 0.8);
   font-size: 32px;
+  margin-left: 20px;
+  a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+  }
 }
 
 .navbar {
+  display: flex;
   justify-content: space-between;
   background-color: transparent;
 }
@@ -22,20 +28,5 @@
 }
 
 .navbar-menu {
-  margin-right: 20px;
+  margin: auto 28px;
 }
-
-
-
-// .navbar-lewagon {
-//   justify-content: space-between;
-//   background: white;
-// }
-
-// .navbar-lewagon .navbar-collapse {
-//   flex-grow: 0;
-// }
-
-// .navbar-lewagon .navbar-brand img {
-//   width: 40px;
-// }

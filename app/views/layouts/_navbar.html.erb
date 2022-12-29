@@ -1,7 +1,10 @@
-<div class="navbar fixed-top navbar-expand-sm" data-controller="navbar" data-action="scroll@window->navbar#updateNavbar">
-  <ul>
-    <li class="navbar-icon"><i class="fa-solid fa-clapperboard"></i></li>
-  </ul>
+<div class="navbar fixed-top navbar-expand-sm" data-controller="navbar">
+  <!-- removed data-action="scroll@window->navbar#updateNavbar" from above div -->
+  <div class="navbar-icon">
+      <%= link_to lists_path do %>
+        <i class="fa-solid fa-clapperboard"></i>
+      <% end %>
+  </div>
 
   <ul class="navbar-menu">
     <li><%= link_to "Home", lists_path, class: "page-link" %></li>
