@@ -11,10 +11,6 @@ li {
   list-style: none;
 }
 
-.page-list {
-  text-decoration: none;
-}
-
 .list-item {
   text-decoration: none;
   background-color: rgba(255, 255,255, 0.7);
@@ -25,13 +21,14 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 24px;
+  font-size: 40px;
   font-weight: bold;
   box-shadow: 0 0 24px rgba(0,0,0,0.2);
   margin-top: 24px;
   a {
     text-decoration: none;
     color: white;
+    font-family: "Martel";
   }
   }
 
@@ -41,5 +38,34 @@ li {
 }
 
 body {
-  font-family: "Open Sans";
+  font-family: "Libre Franklin";
+}
+
+.banner-home {
+  height: 100vh;
+}
+
+.home-container {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.fullpage {
+  scroll-snap-type: y mandatory;
+  height: 100vh;
+  overflow-y: scroll;
+  background-color: black;
+}
+
+.section {
+  scroll-snap-align: start;
+  height: 100vh;
+}
+
+.lists-header {
+  padding-top: 80px;
+  margin-bottom: 24px;
+  color: white;
+  font-family: "Martel";
+  font-size: 64px;
 }

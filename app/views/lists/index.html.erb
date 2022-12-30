@@ -1,16 +1,20 @@
-<div class="banner banner-home">
-  <h1 class="header">Watchlist.</h1>
-</div>
+<div class="fullpage">
 
-<div class="container">
-  <ul class="container-index">
-    <% @lists.each do |list| %>
-        <li class="list-item" style="background-image: url('<%= cl_image_path list.photo.key %>'); background-size: cover; background-repeat: no-repeat;">
-          <%= link_to list.name, list_path(list) %>
-        </li>
-    <% end %>
-  </ul>
+  <div class="banner banner-home section">
+    <h1 class="header">Watchlist.</h1>
+    <p>Your definitive movie list. Add. Browse. Discuss.</p>
+      <a href="#the-lists"><i class="fa-solid fa-arrow-down"></i></a>
+  </div>
 
-  <%# <%= link_to "Create new list", new_list_path, class: "page-link" %>
+  <div class="container home-container section">
+    <h1 class="lists-header"><a id="the-lists">The Lists.</a></h1>
+    <ul class="container-index">
+      <% @lists.each do |list| %>
+          <li class="list-item" style="background-image: url('<%= cl_image_path list.photo.key %>'); background-size: cover; background-repeat: no-repeat;">
+            <%= link_to list.name, list_path(list) %>
+          </li>
+      <% end %>
+    </ul>
+  </div>
 
 </div>

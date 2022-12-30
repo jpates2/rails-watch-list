@@ -1,4 +1,4 @@
-<div class="banner banner-show" style="background-image: url('<%= cl_image_path @list.photo.key %>')">
+<div class="banner banner-show" style="background-image: url('<%= cl_image_path @list.photo.key %>');">
   <h1 class="header"><%= @list.name %>.</h1>
   <a><%= link_to "Add Movie", new_list_bookmark_path(@list), class: "page-link movie-button" %></a>
   <div>
@@ -9,25 +9,25 @@
 
 <div class="container">
 
-<% unless @list.bookmarks.empty? %>
-  <ul div="movie-list">
-    <div class="movie-card">
-<% end %>
-      <% @list.bookmarks.each do |bookmark| %>
-        <li><%= image_tag bookmark.movie.poster_url, class: "poster-image" %></li>
-        <div class="movie-details">
-        <li><%= bookmark.movie.title %>&nbsp;&nbsp;&nbsp;&nbsp;<%= bookmark.movie.rating %>&nbsp;<i class="fa-solid fa-star"></i></li>
-        <li><%= bookmark.movie.overview %></li>
-        <li><em>"<%= bookmark.comment %>"</em></li>
-        <%= link_to "Delete bookmark", bookmark_path(bookmark), class: "page-link delete-bookmark",
-        data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}
-        %>
-        </div>
-      <br>
-      <br>
-      <% end %>
-    </div>
-  </ul>
+  <% unless @list.bookmarks.empty? %>
+    <ul div="movie-list">
+      <div class="movie-card">
+  <% end %>
+        <% @list.bookmarks.each do |bookmark| %>
+          <li><%= image_tag bookmark.movie.poster_url, class: "poster-image" %></li>
+          <div class="movie-details">
+          <li><%= bookmark.movie.title %>&nbsp;&nbsp;&nbsp;&nbsp;<%= bookmark.movie.rating %>&nbsp;<i class="fa-solid fa-star"></i></li>
+          <li><%= bookmark.movie.overview %></li>
+          <li><em>"<%= bookmark.comment %>"</em></li>
+          <%= link_to "Delete bookmark", bookmark_path(bookmark), class: "page-link delete-bookmark",
+          data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}
+          %>
+          </div>
+        <br>
+        <br>
+        <% end %>
+      </div>
+    </ul>
 
   <%# <%= link_to "Add Movie", new_list_bookmark_path(@list), class: "page-link" %>
   <%# <%= link_to "Back to homepage", lists_path, class: "page-link" %>
