@@ -1,4 +1,9 @@
 // Specific CSS for your home-page
+
+html, body {
+  scroll-behavior: smooth !important;
+}
+
 .container-index {
   // text-align: center;
   width: 100%;

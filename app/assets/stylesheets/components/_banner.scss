@@ -5,15 +5,22 @@
   color: rgba(0,0,0,0.8)
 }
 
-.banner-home, .banner-show, .banner-create {
+.banner-home {
   color: white;
   height: 480px;
+}
+
+.banner-show, .banner-create {
+  height: 400px;
+  color: white;
+
 }
 
 .banner-home {
   background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), asset-url("cinema-outside.jpg");
   p {
     font-size: 16px;
+    margin-bottom: 8px;
   }
   a {
     font-weight: bold;
@@ -34,5 +41,5 @@
 }
 
 .new-header {
-  padding-top: 280px;
+  padding-top: 240px;
 }
