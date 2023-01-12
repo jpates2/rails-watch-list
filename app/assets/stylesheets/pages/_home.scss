@@ -64,7 +64,14 @@ body {
 
 .section {
   scroll-snap-align: start;
+}
+
+.one {
   height: 100vh;
+}
+
+.two {
+  height: 140vh;
 }
 
 .lists-header {
