@@ -1,17 +1,10 @@
-.movie-list {
-  padding-top: 32px;
-}
-
 .movie-card {
-  overflow: hidden;
   height: 240px;
   width: 800px;
   color: rgba(0, 0, 0, 0.6);
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   display: inline-grid;
   grid-template-columns: 1fr 7fr;
-  // align-items: center;
-  // margin-top: 32px;
   margin: 16px auto;
   background-color: rgba(255, 255, 255, 0.7);
   border-radius: 4px;
@@ -28,7 +21,6 @@
 }
 
 .movie-details {
-  // flex-direction: column;
   padding: 16px 32px 16px 16px;
 }
 
@@ -37,29 +29,25 @@
   font-weight: 600;
 }
 
-// .movie-rating {
-//   text-align: right;
-// }
+  .delete-bookmark {
+    border-radius: 4px;
+    border: 1px solid rgba(148, 155, 160, 0.7);
+    color: rgba(148, 155, 160, 0.9);
+    margin-top: 16px;
+    width: 160px;
+    text-align: center;
+    padding: 4px;
+  }
 
-.delete-bookmark {
-  border-radius: 4px;
-  border: 1px solid rgba(148, 155, 160, 0.7);
-  color: rgba(148, 155, 160, 0.9);
-  margin-top: 16px;
-  width: 160px;
-  text-align: center;
-  padding: 4px;
-}
+  .delete-bookmark:hover {
+    border: 1px solid rgba(148, 155, 160, 1);
+    color: rgba(148, 155, 160, 1);
+  }
 
-.delete-bookmark:hover {
-  border: 1px solid rgba(148, 155, 160, 1);
-  color: rgba(148, 155, 160, 1);
-  // background-color:(148, 155, 160, 0.8);
-}
-
-.container {
-  text-align: center;
-}
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
 
 .fa-star {
   color: rgba(249, 194, 46, 1);
