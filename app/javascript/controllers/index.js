@@ -12,3 +12,6 @@ application.register("navbar", NavbarController)
 
 import ScrollToController from "./scroll_to_controller"
 application.register("scroll-to", ScrollToController)
+
+import TypedJsController from "./typed_js_controller"
+application.register("typed-js", TypedJsController)
