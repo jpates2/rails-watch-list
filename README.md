@@ -1,24 +1,5 @@
-# README
+**RAILS WATCH LIST**
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Site for organising movies into lists based on genre. Users can browse lists, create a new list and add a movie to any list. Built using Ruby on Rails, HTML, CSS and Javascript.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+https://watchlist-bcn1046.herokuapp.com/
